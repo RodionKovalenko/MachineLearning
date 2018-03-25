@@ -7,3 +7,43 @@ enode://68e54fb24ad2875d56414b269d0e5126b2c20980d6797481860609f0244b8c73300c3986
 
 
 parity ui --config ~/.local/share/io.parity.ethereum/testStart.toml --ws-interface 192.168.2.102 --ws-origins http://192.168.2.102:8180
+
+
+
+
+install or update parity
+
+bash <(curl https://get.parity.io -Lk)
+
+
+//nodejs 9
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt-get install -y build-essential
+
+
+
+//update npm 
+sudo npm install npm -g
+
+
+
+//uninstall npm 
+sudo npm rm npm -g
+or 
+sudo apt-get remove nodejs
+sudo apt-get remove npm
+
+or 
+sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* /usr/local/lib/dtrace/node.d ~/.npm ~/.node-gyp /opt/local/bin/node /opt/local/include/node /opt/local/lib/node_modules 
+
+sudo rm -rf /usr/local/lib/node*
+
+sudo rm -rf /usr/local/include/node*
+
+sudo rm -rf /usr/local/bin/node*
+
+// or remove with dependencies 
+
+sudo apt-get purge nodejs
+sudo apt-get autoremove
