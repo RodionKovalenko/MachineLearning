@@ -1,0 +1,52 @@
+{
+	"name": "pChain",
+	"engine": {
+    "authorityRound": {
+        "params": {
+            "stepDuration": "5",
+	"gasLimitBoundDivisor":"0x0400",
+           "validators": {
+    "list": [
+              "0x00BAC83fD1B41286b36a70b86481FD1af1915Ce4",
+	      "0x007c8c98A12C3D60d250ACdDCdd0109Af7c8AF57",
+       	      "0x00E5Fc9f5CF88d53Fe58911B5B07713f04e66E71"
+		
+    ]
+}
+            
+        }
+    }
+},
+	"params": {
+		"accountStartNonce": "0x0",
+		"maximumExtraDataSize": "0x20",
+		"minGasLimit": "0x0001",
+		"networkID" : "0x5555",
+		"gasLimitBoundDivisor": "0x11"
+	},
+	"genesis": {
+		"seal": {
+    "authorityRound": {
+        "step": "0x0",
+        "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    }
+},
+		"difficulty": "0x20000",
+		"author": "0x0000000000000000000000000000000000000000",
+		"timestamp": "0x00",
+		"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+		"extraData": "0x",
+		"gasLimit": "0x5B49999999999" 
+	},
+	"accounts": {
+		"0x0000000000000000000000000000000000000001": { "balance": "1", "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
+		"0x0000000000000000000000000000000000000002": { "balance": "1", "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
+		"0x0000000000000000000000000000000000000003": { "balance": "1", "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
+		"0x0000000000000000000000000000000000000004": { "balance": "1", "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
+	 	"0x00BAC83fD1B41286b36a70b86481FD1af1915Ce4": {"balance": "79939999232333222222222233322222"},
+		"0x007c8c98A12C3D60d250ACdDCdd0109Af7c8AF57": {"balance": "999933433333333333333333333333"},
+		"0x00E5Fc9f5CF88d53Fe58911B5B07713f04e66E71": {"balance": "99993333333333333333333333333"},
+		"": {"balance": "9966669777722322222222222222222222"}
+		
+		}
+}

@@ -1,0 +1,32 @@
+[parity]
+chain = ".local/share/io.parity.ethereum/genesis.json"
+base_path=".local/share/io.parity.ethereum"
+[network]
+id=5555
+reserved_only=false
+port=30303
+allow_ips = "all"
+
+
+[rpc]
+port=8545
+apis=["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts",  "secretstore"]
+cors = "*"
+[ui]
+disable = false
+port=8180
+force=true
+[websockets]
+port = 8450
+interface = "local"
+origins = ["*"]
+apis = ["web3", "eth", "net", "parity", "traces", "rpc", "secretstore"]
+[account]
+password = [".local/share/io.parity.ethereum/passwort.txt"]
+[mining]
+engine_signer="0x00E5Fc9f5CF88d53Fe58911B5B07713f04e66E71"
+reseal_on_txs = "none" 
+usd_per_tx = "0" 
+
+
+
