@@ -10,6 +10,8 @@ parity ui --config ~/.local/share/io.parity.ethereum/testStart.toml --ws-interfa
 
 
 
+sudo parity ui --config ~/.local/share/io.parity.ethereum/testStart.toml --rpccorsdomain "*" --ws-interface 192.168.2.102 --ws-origins http://192.168.2.102:8180 --nat extip:192.168.2.102
+
 
 install or update parity
 
