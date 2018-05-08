@@ -1,7 +1,7 @@
 package networks;
 
 import utils.NetworkFunctions;
-import src.utils.Statistics;
+import utils.Statistics;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -10,7 +10,7 @@ import java.nio.file.StandardOpenOption;
 import java.util.Locale;
 
 
-import src.visualize.LineChartSample;
+import visualize.LineChartSample;
 
 import javax.swing.*;
 
