@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="body" style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+
+
+  <div id="thumbnail-container">
+  <button id="startCamera" (click)="startCamera()">start camera</button>
+  <button id="captureImage" (click)="captureImage()">capture image</button>
+  <div id="player-container">
+    <video id="video" capture="camcorder" autoplay></video>
+    <div id="controls">
+    </div>
+  </div>
+
+  </div>
+  <div id="imageToAdd"></div>
+</div>
